@@ -133,20 +133,24 @@ USE_I18N = True
 
 USE_TZ = True
 
+# ... (rest of your settings.py) ...
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# This is where Django will look for additional static files
 STATICFILES_DIRS = [
-    # For project-wide static files (e.g., your Django-served static)
-    BASE_DIR / 'static',
+    # BASE_DIR / 'static', # You can keep this if you have a project-level 'static' folder
+    # <--- ADD THIS LINE: Points to your React build output
+    BASE_DIR / 'frontend' / 'dist',
 ]
 
-# Media files (user-uploaded images for projects)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# This is the directory where `python manage.py collectstatic` will gather all static files
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Ensure this is present
 
+# ... (rest of your settings.py) ...
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
