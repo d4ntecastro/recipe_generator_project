@@ -35,7 +35,7 @@ function App() {
     e.preventDefault();
     try {
       // Your actual token from drf_create_token
-      const dummyToken = '842dec06a8c2aa4a76790d99e3a8db8dea0c787a';
+      const dummyToken = '07c634e6b9fa09dc012980d7eb6a23494bb4bec6';
       setToken(dummyToken);
       localStorage.setItem('authToken', dummyToken);
       alert('Logged in with dummy token! You can now generate recipes.');
