@@ -52,7 +52,7 @@ function RecipeGenerator({ API_BASE_URL, isAuthenticated }) {
             value={ingredients}
             onChange={(e) => setIngredients(e.target.value)}
             placeholder="e.g., chicken, broccoli, rice"
-            style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', color: '#333' }}
+            style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', color: 'white', backgroundColor: '#333' }} /* MODIFIED */
             disabled={!isAuthenticated}
           />
         </div>
@@ -64,7 +64,7 @@ function RecipeGenerator({ API_BASE_URL, isAuthenticated }) {
             value={dietaryPreferences}
             onChange={(e) => setDietaryPreferences(e.target.value)}
             placeholder="e.g., vegetarian, gluten-free"
-            style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', color: '#333' }}
+            style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', color: 'white', backgroundColor: '#333' }} /* MODIFIED */
             disabled={!isAuthenticated}
           />
         </div>
@@ -76,7 +76,7 @@ function RecipeGenerator({ API_BASE_URL, isAuthenticated }) {
             value={cookingTime}
             onChange={(e) => setCookingTime(e.target.value)}
             placeholder="e.g., 30"
-            style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', color: '#333' }}
+            style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', color: 'white', backgroundColor: '#333' }} /* MODIFIED */
             disabled={!isAuthenticated}
           />
         </div>
@@ -88,7 +88,7 @@ function RecipeGenerator({ API_BASE_URL, isAuthenticated }) {
             value={cuisine}
             onChange={(e) => setCuisine(e.target.value)}
             placeholder="e.g., Italian, Mexican"
-            style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', color: '#333' }}
+            style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc', color: 'white', backgroundColor: '#333' }} /* MODIFIED */
             disabled={!isAuthenticated}
           />
         </div>
